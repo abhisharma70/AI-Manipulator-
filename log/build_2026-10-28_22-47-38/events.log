@@ -1,0 +1,153 @@
+[0.000000] (-) TimerEvent: {}
+[0.001136] (manipulator_control) JobQueued: {'identifier': 'manipulator_control', 'dependencies': OrderedDict()}
+[0.001293] (manipulator_description) JobQueued: {'identifier': 'manipulator_description', 'dependencies': OrderedDict()}
+[0.001332] (manipulator_moveit_config) JobQueued: {'identifier': 'manipulator_moveit_config', 'dependencies': OrderedDict()}
+[0.001354] (manipulator_perception) JobQueued: {'identifier': 'manipulator_perception', 'dependencies': OrderedDict()}
+[0.001372] (manipulator_gazebo) JobQueued: {'identifier': 'manipulator_gazebo', 'dependencies': OrderedDict({'manipulator_description': '/home/student/Robotics_Proj/install/manipulator_description'})}
+[0.001395] (manipulator_bringup) JobQueued: {'identifier': 'manipulator_bringup', 'dependencies': OrderedDict({'manipulator_control': '/home/student/Robotics_Proj/install/manipulator_control', 'manipulator_description': '/home/student/Robotics_Proj/install/manipulator_description', 'manipulator_moveit_config': '/home/student/Robotics_Proj/install/manipulator_moveit_config', 'manipulator_perception': '/home/student/Robotics_Proj/install/manipulator_perception', 'manipulator_gazebo': '/home/student/Robotics_Proj/install/manipulator_gazebo'})}
+[0.001433] (manipulator_description) JobStarted: {'identifier': 'manipulator_description'}
+[0.042094] (manipulator_control) JobStarted: {'identifier': 'manipulator_control'}
+[0.058411] (manipulator_moveit_config) JobStarted: {'identifier': 'manipulator_moveit_config'}
+[0.059039] (manipulator_perception) JobStarted: {'identifier': 'manipulator_perception'}
+[0.084485] (manipulator_description) JobProgress: {'identifier': 'manipulator_description', 'progress': 'cmake'}
+[0.086622] (manipulator_description) Command: {'cmd': ['/usr/bin/cmake', '/home/student/Robotics_Proj/ros2_ws/src/manipulator_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/student/Robotics_Proj/install/manipulator_description'], 'cwd': '/home/student/Robotics_Proj/build/manipulator_description', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'EGL_PLATFORM': 'wayland', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'student', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'HOME': '/home/student', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'TERM_PROGRAM_VERSION': '1.143.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1924', 'SYSTEMD_EXEC_PID': '2167', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3020', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'student', 'JOURNAL_STREAM': '10:15886', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'student', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/student/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/usr/share/code/bin/copilot-shim', 'SESSION_MANAGER': 'local/ubuntu-vm:@/tmp/.ICE-unix/2136,unix/ubuntu-vm:/tmp/.ICE-unix/2136', 'INVOCATION_ID': '464a450d5cbd4b0595db4dc1c2632908', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TDLWX3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-383eeb3c34.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/student/Robotics_Proj/build/manipulator_description', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '86047ce3acb02212ede262348e6d41a3', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA='}), 'shell': False}
+[0.096347] (-) TimerEvent: {}
+[0.132614] (manipulator_control) JobProgress: {'identifier': 'manipulator_control', 'progress': 'cmake'}
+[0.133542] (manipulator_control) Command: {'cmd': ['/usr/bin/cmake', '/home/student/Robotics_Proj/ros2_ws/src/manipulator_control', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/student/Robotics_Proj/install/manipulator_control'], 'cwd': '/home/student/Robotics_Proj/build/manipulator_control', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'EGL_PLATFORM': 'wayland', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'student', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'HOME': '/home/student', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'TERM_PROGRAM_VERSION': '1.143.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1924', 'SYSTEMD_EXEC_PID': '2167', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3020', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'student', 'JOURNAL_STREAM': '10:15886', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'student', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/student/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/usr/share/code/bin/copilot-shim', 'SESSION_MANAGER': 'local/ubuntu-vm:@/tmp/.ICE-unix/2136,unix/ubuntu-vm:/tmp/.ICE-unix/2136', 'INVOCATION_ID': '464a450d5cbd4b0595db4dc1c2632908', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TDLWX3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-383eeb3c34.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/student/Robotics_Proj/build/manipulator_control', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '86047ce3acb02212ede262348e6d41a3', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA='}), 'shell': False}
+[0.142085] (manipulator_moveit_config) JobProgress: {'identifier': 'manipulator_moveit_config', 'progress': 'cmake'}
+[0.148430] (manipulator_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/student/Robotics_Proj/ros2_ws/src/manipulator_moveit_config', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/student/Robotics_Proj/install/manipulator_moveit_config'], 'cwd': '/home/student/Robotics_Proj/build/manipulator_moveit_config', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'EGL_PLATFORM': 'wayland', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'student', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'HOME': '/home/student', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'TERM_PROGRAM_VERSION': '1.143.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1924', 'SYSTEMD_EXEC_PID': '2167', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3020', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'student', 'JOURNAL_STREAM': '10:15886', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'student', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/student/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/usr/share/code/bin/copilot-shim', 'SESSION_MANAGER': 'local/ubuntu-vm:@/tmp/.ICE-unix/2136,unix/ubuntu-vm:/tmp/.ICE-unix/2136', 'INVOCATION_ID': '464a450d5cbd4b0595db4dc1c2632908', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TDLWX3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-383eeb3c34.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/student/Robotics_Proj/build/manipulator_moveit_config', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '86047ce3acb02212ede262348e6d41a3', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA='}), 'shell': False}
+[0.233112] (-) TimerEvent: {}
+[0.365605] (-) TimerEvent: {}
+[0.470177] (-) TimerEvent: {}
+[0.580364] (-) TimerEvent: {}
+[0.698556] (-) TimerEvent: {}
+[0.801083] (-) TimerEvent: {}
+[0.909471] (-) TimerEvent: {}
+[0.984025] (manipulator_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.985139] (manipulator_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.990638] (manipulator_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.021492] (-) TimerEvent: {}
+[1.242295] (-) TimerEvent: {}
+[1.306022] (manipulator_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.319238] (manipulator_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.353563] (-) TimerEvent: {}
+[1.369532] (manipulator_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.453238] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.453774] (-) TimerEvent: {}
+[1.456324] (manipulator_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.491739] (manipulator_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.562253] (-) TimerEvent: {}
+[1.662962] (-) TimerEvent: {}
+[1.764553] (-) TimerEvent: {}
+[1.867490] (-) TimerEvent: {}
+[1.883927] (manipulator_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.927281] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.932088] (manipulator_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.934426] (manipulator_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.937308] (manipulator_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.938527] (manipulator_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.951930] (manipulator_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.952846] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.953923] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.962778] (manipulator_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.963538] (manipulator_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.964391] (manipulator_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.970021] (-) TimerEvent: {}
+[1.989242] (manipulator_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.993889] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.005152] (manipulator_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.072090] (-) TimerEvent: {}
+[2.193947] (-) TimerEvent: {}
+[2.304871] (-) TimerEvent: {}
+[2.409041] (-) TimerEvent: {}
+[2.538252] (manipulator_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.543120] (-) TimerEvent: {}
+[2.552590] (manipulator_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.560886] (manipulator_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.563788] (manipulator_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.564030] (manipulator_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.585982] (manipulator_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.587171] (manipulator_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.587368] (manipulator_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.646232] (-) TimerEvent: {}
+[2.657346] (manipulator_control) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[2.657951] (manipulator_control) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.658338] (manipulator_control) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.658460] (manipulator_control) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.658569] (manipulator_control) StderrLine: {'line': b'\n'}
+[2.661130] (manipulator_control) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.664350] (manipulator_control) StderrLine: {'line': b'  any of the following names:\n'}
+[2.665094] (manipulator_control) StderrLine: {'line': b'\n'}
+[2.666617] (manipulator_control) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.666898] (manipulator_control) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.667144] (manipulator_control) StderrLine: {'line': b'\n'}
+[2.667282] (manipulator_control) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.667378] (manipulator_control) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.667464] (manipulator_control) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.667547] (manipulator_control) StderrLine: {'line': b'  has been installed.\n'}
+[2.667631] (manipulator_control) StderrLine: {'line': b'\n'}
+[2.667724] (manipulator_control) StderrLine: {'line': b'\x1b[0m\n'}
+[2.667834] (manipulator_description) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[2.675105] (manipulator_description) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.675277] (manipulator_description) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.675382] (manipulator_description) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.675472] (manipulator_description) StderrLine: {'line': b'\n'}
+[2.675582] (manipulator_description) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.675667] (manipulator_description) StderrLine: {'line': b'  any of the following names:\n'}
+[2.675825] (manipulator_description) StderrLine: {'line': b'\n'}
+[2.675942] (manipulator_description) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.676133] (manipulator_description) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.676269] (manipulator_description) StderrLine: {'line': b'\n'}
+[2.676376] (manipulator_description) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.676466] (manipulator_control) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.677336] (manipulator_description) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.677504] (manipulator_description) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.677599] (manipulator_description) StderrLine: {'line': b'  has been installed.\n'}
+[2.677683] (manipulator_description) StderrLine: {'line': b'\n'}
+[2.677839] (manipulator_description) StderrLine: {'line': b'\x1b[0m\n'}
+[2.683103] (manipulator_description) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.702707] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.706317] (manipulator_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.707387] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.707583] (manipulator_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.726378] (manipulator_description) CommandEnded: {'returncode': 1}
+[2.732698] (manipulator_control) CommandEnded: {'returncode': 1}
+[2.747091] (-) TimerEvent: {}
+[2.748519] (manipulator_moveit_config) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.769749] (manipulator_moveit_config) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[2.773780] (manipulator_moveit_config) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.773985] (manipulator_moveit_config) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.774135] (manipulator_moveit_config) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.774271] (manipulator_moveit_config) StderrLine: {'line': b'\n'}
+[2.774417] (manipulator_moveit_config) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.774562] (manipulator_moveit_config) StderrLine: {'line': b'  any of the following names:\n'}
+[2.774747] (manipulator_moveit_config) StderrLine: {'line': b'\n'}
+[2.774950] (manipulator_moveit_config) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.775104] (manipulator_moveit_config) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.775250] (manipulator_moveit_config) StderrLine: {'line': b'\n'}
+[2.775433] (manipulator_moveit_config) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.775669] (manipulator_moveit_config) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.775859] (manipulator_moveit_config) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.789348] (manipulator_moveit_config) StderrLine: {'line': b'  has been installed.\n'}
+[2.789533] (manipulator_moveit_config) StderrLine: {'line': b'\n'}
+[2.789689] (manipulator_moveit_config) StderrLine: {'line': b'\x1b[0m\n'}
+[2.789850] (manipulator_moveit_config) CommandEnded: {'returncode': 1}
+[2.856438] (-) TimerEvent: {}
+[2.929609] (manipulator_description) JobEnded: {'identifier': 'manipulator_description', 'rc': 1}
+[2.931584] (manipulator_control) JobEnded: {'identifier': 'manipulator_control', 'rc': 'SIGINT'}
+[2.932194] (manipulator_moveit_config) JobEnded: {'identifier': 'manipulator_moveit_config', 'rc': 'SIGINT'}
+[2.961343] (-) TimerEvent: {}
+[3.062864] (-) TimerEvent: {}
+[3.164050] (-) TimerEvent: {}
+[3.289950] (-) TimerEvent: {}
+[3.394500] (-) TimerEvent: {}
+[3.497071] (-) TimerEvent: {}
+[3.598047] (-) TimerEvent: {}
+[3.699122] (-) TimerEvent: {}
+[3.801238] (-) TimerEvent: {}
+[3.903653] (-) TimerEvent: {}
+[4.006290] (-) TimerEvent: {}
+[4.067074] (manipulator_perception) JobEnded: {'identifier': 'manipulator_perception', 'rc': 'SIGINT'}
+[4.079841] (manipulator_gazebo) JobSkipped: {'identifier': 'manipulator_gazebo'}
+[4.079906] (manipulator_bringup) JobSkipped: {'identifier': 'manipulator_bringup'}
+[4.081107] (-) EventReactorShutdown: {}

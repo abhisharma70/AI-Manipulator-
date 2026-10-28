@@ -1,0 +1,32 @@
+[0.094s] Invoking command in '/home/student/Robotics_Proj/build/manipulator_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/student/Robotics_Proj/ros2_ws/src/manipulator_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Robotics_Proj/install/manipulator_description
+[0.984s] -- The C compiler identification is GNU 13.3.0
+[1.318s] -- The CXX compiler identification is GNU 13.3.0
+[1.455s] -- Detecting C compiler ABI info
+[1.936s] -- Detecting C compiler ABI info - done
+[1.962s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.962s] -- Detecting C compile features
+[1.963s] -- Detecting C compile features - done
+[2.004s] -- Detecting CXX compiler ABI info
+[2.551s] -- Detecting CXX compiler ABI info - done
+[2.585s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.586s] -- Detecting CXX compile features
+[2.586s] -- Detecting CXX compile features - done
+[2.673s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[2.674s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.674s]   has asked CMake to find a package configuration file provided by
+[2.674s]   "ament_cmake", but CMake did not find one.
+[2.674s] 
+[2.674s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.674s]   any of the following names:
+[2.674s] 
+[2.675s]     ament_cmakeConfig.cmake
+[2.675s]     ament_cmake-config.cmake
+[2.675s] 
+[2.675s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.676s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.676s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.676s]   has been installed.
+[2.676s] 
+[2.676s] [0m
+[2.683s] -- Configuring incomplete, errors occurred!
+[2.725s] Invoked command in '/home/student/Robotics_Proj/build/manipulator_description' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/student/Robotics_Proj/ros2_ws/src/manipulator_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Robotics_Proj/install/manipulator_description

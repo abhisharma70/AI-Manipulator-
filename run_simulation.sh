@@ -4,7 +4,7 @@
 # AI-Based Robotic Manipulator Simulation - All-in-One Build & Run Script
 # ==============================================================================
 
-set -e
+set -eo pipefail
 
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
@@ -14,6 +14,21 @@ NC='\033[0m' # No Color
 
 WORKSPACE_DIR="/home/student/Robotics_Proj/ros2_ws"
 ROS_DISTRO_PATH="/opt/ros/jazzy"
+GUI_MODE="true"
+
+if [ "$#" -gt 1 ]; then
+    echo "Usage: $0 [--gui|--headless]" >&2
+    exit 2
+fi
+
+case "${1:-}" in
+    ""|--gui) ;;
+    --headless) GUI_MODE="false" ;;
+    *)
+        echo "Usage: $0 [--gui|--headless]" >&2
+        exit 2
+        ;;
+esac
 
 echo -e "${BLUE}====================================================${NC}"
 echo -e "${BLUE}  AI Robotic Manipulator Simulation Launch Sequence  ${NC}"
@@ -60,9 +75,21 @@ source "${WORKSPACE_DIR}/install/setup.bash"
 echo -e "${GREEN}[4/4] Launching Gazebo, Controllers, Perception & State Machine...${NC}"
 echo -e "${BLUE}----------------------------------------------------${NC}"
 echo -e "${YELLOW}Activity Logs will stream below:${NC}"
+echo -e "${GREEN}Gazebo GUI: ${GUI_MODE}${NC}"
 echo -e "${BLUE}----------------------------------------------------${NC}"
 
 # Execute top-level bringup and tee logs to simulation_run.log
 LOG_FILE="/home/student/Robotics_Proj/simulation_run.log"
+REPORT_SCRIPT="/home/student/Robotics_Proj/generate_telemetry_image.py"
+
+generate_telemetry_report() {
+    if [ -f "${LOG_FILE}" ]; then
+        python3 "${REPORT_SCRIPT}" --log "${LOG_FILE}" || \
+            echo -e "${RED}[WARN] Telemetry image generation failed.${NC}" >&2
+    fi
+}
+
+trap generate_telemetry_report EXIT
+
 echo -e "${GREEN}Logging output to console and ${LOG_FILE}...${NC}"
-ros2 launch manipulator_bringup bringup.launch.py 2>&1 | tee "${LOG_FILE}"
+ros2 launch manipulator_bringup bringup.launch.py "gui:=${GUI_MODE}" 2>&1 | tee "${LOG_FILE}"

@@ -1,10 +1,10 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, RegisterEventHandler
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, RegisterEventHandler
 from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import Command
+from launch.substitutions import Command, LaunchConfiguration, PythonExpression
 from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
 
@@ -18,6 +18,7 @@ def generate_launch_description():
     controllers_yaml = os.path.join(pkg_manipulator_control, 'config', 'ros2_controllers.yaml')
     bridge_config = os.path.join(pkg_manipulator_gazebo, 'config', 'gz_bridge.yaml')
     xacro_file = os.path.join(pkg_manipulator_description, 'urdf', 'manipulator.urdf.xacro')
+    gui = LaunchConfiguration('gui')
 
     robot_description = ParameterValue(
         Command(['xacro ', xacro_file, ' controllers_yaml:=', controllers_yaml]),
@@ -41,7 +42,12 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
         ),
-        launch_arguments={'gz_args': f'-r {world_path}'}.items()
+        launch_arguments={
+            'gz_args': PythonExpression([
+                "'-r ", world_path, "' if '", gui,
+                "' == 'true' else '-s -r ", world_path, "'"
+            ])
+        }.items()
     )
 
     # Spawn Entity into Gazebo
@@ -76,6 +82,7 @@ def generate_launch_description():
             'joint_state_broadcaster',
             '--controller-manager', '/controller_manager',
             '--switch-timeout', '30.0',
+            '--service-call-timeout', '30.0',
         ],
         output='screen'
     )
@@ -88,6 +95,7 @@ def generate_launch_description():
             'arm_controller',
             '--controller-manager', '/controller_manager',
             '--switch-timeout', '30.0',
+            '--service-call-timeout', '30.0',
         ],
         output='screen'
     )
@@ -100,6 +108,7 @@ def generate_launch_description():
             'gripper_controller',
             '--controller-manager', '/controller_manager',
             '--switch-timeout', '30.0',
+            '--service-call-timeout', '30.0',
         ],
         output='screen'
     )
@@ -120,6 +129,11 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        DeclareLaunchArgument(
+            'gui',
+            default_value='false',
+            description='Start the Gazebo GUI (requires working 3D graphics)',
+        ),
         gz_sim,
         robot_state_publisher_node,
         spawn_robot,

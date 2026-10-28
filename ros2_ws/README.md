@@ -50,13 +50,15 @@ ros2 launch manipulator_description view_robot.launch.py
 
 ### 2. Launch Physics Simulation in Gazebo
 ```bash
-ros2 launch manipulator_gazebo manipulator_gazebo.launch.py
+ros2 launch manipulator_gazebo manipulator_gazebo.launch.py gui:=false
 ```
+The default server-only mode avoids GUI graphics issues in virtual machines. To open the Gazebo window on a machine with working 3D acceleration, pass `gui:=true`.
 
 ### 3. Run Autonomous Pick-and-Place (Full System Bringup)
 ```bash
-ros2 launch manipulator_bringup bringup.launch.py
+ros2 launch manipulator_bringup bringup.launch.py gui:=false
 ```
+Pass `gui:=true` to display Gazebo when 3D acceleration is available.
 This launches:
 - Gazebo Sim with tabletop environment and target pick cube
 - Robot state publisher & TF tree

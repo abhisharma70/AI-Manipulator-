@@ -1,140 +1,135 @@
-[INFO] [launch]: All log files can be found below /home/student/.ros/log/2026-10-28-22-03-08-730005-ubuntu-vm-3627
+[INFO] [launch]: All log files can be found below /home/student/.ros/log/2026-10-28-23-11-12-316568-ubuntu-vm-16507
 [INFO] [launch]: Default logging verbosity is set to INFO
 WARNING:root:[33;21mCannot infer URDF from `/home/student/Robotics_Proj/ros2_ws/install/manipulator_moveit_config/share/manipulator_moveit_config`. -- using config/manipulator.urdf[0m
 WARNING:root:[33;21mCannot infer SRDF from `/home/student/Robotics_Proj/ros2_ws/install/manipulator_moveit_config/share/manipulator_moveit_config`. -- using config/manipulator.srdf[0m
-[INFO] [gazebo-1]: process started with pid [3654]
-[INFO] [robot_state_publisher-2]: process started with pid [3655]
-[INFO] [create-3]: process started with pid [3657]
-[INFO] [parameter_bridge-4]: process started with pid [3658]
-[INFO] [spawner-5]: process started with pid [3659]
-[create-3] [INFO] [1793205190.773223594] [ros_gz_sim]: Requesting list of world names.
-[robot_state_publisher-2] [INFO] [1793205190.847323416] [robot_state_publisher]: Robot initialized
-[parameter_bridge-4] [INFO] [1793205191.822544880] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
-[parameter_bridge-4] [INFO] [1793205191.832142148] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image (gz.msgs.Image) -> /camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
-[parameter_bridge-4] [INFO] [1793205191.838874025] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
-[parameter_bridge-4] [INFO] [1793205191.843240207] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (gz.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
-[parameter_bridge-4] [INFO] [1793205191.846561947] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/points (gz.msgs.PointCloudPacked) -> /camera/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
-[spawner-5] [INFO] [1793205192.142147155] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
-[create-3] [INFO] [1793205193.268662194] [ros_gz_sim]: Waiting messages on topic [robot_description].
-[create-3] [INFO] [1793205193.288513100] [ros_gz_sim]: Entity creation successful.
-[INFO] [create-3]: process has finished cleanly [pid 3657]
-[gazebo-1] [INFO] [1793205194.434948759] [gz_ros_control]: [gz_ros2_control] Fixed joint ['world_to_base_joint'] (Entity='52') is skipped.
-[gazebo-1] [INFO] [1793205194.464955027] [gz_ros_control]: Loading controller_manager
-[gazebo-1] [INFO] [1793205194.689263201] [controller_manager]: Using ROS clock for triggering controller manager cycles.
-[gazebo-1] [WARN] [1793205194.689612459] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
-[gazebo-1] [INFO] [1793205194.782711572] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
-[gazebo-1] [WARN] [1793205194.788606411] [gz_ros_control]: Waiting RM to load and initialize hardware...
-[gazebo-1] [WARN] [1793205195.784511029] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[INFO] [gazebo-1]: process started with pid [16519]
+[INFO] [robot_state_publisher-2]: process started with pid [16520]
+[INFO] [create-3]: process started with pid [16522]
+[INFO] [parameter_bridge-4]: process started with pid [16523]
+[INFO] [spawner-5]: process started with pid [16524]
+[create-3] [INFO] [1793209274.480667014] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [INFO] [1793209274.634685984] [robot_state_publisher]: Robot initialized
+[spawner-5] [INFO] [1793209275.624637693] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[parameter_bridge-4] [INFO] [1793209275.827152115] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793209275.840806367] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image (gz.msgs.Image) -> /camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793209275.853913367] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793209275.867460291] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (gz.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793209275.871821376] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/points (gz.msgs.PointCloudPacked) -> /camera/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[create-3] [INFO] [1793209277.300740426] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1793209277.329087453] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-3]: process has finished cleanly [pid 16522]
+[gazebo-1] [INFO] [1793209278.556881794] [gz_ros_control]: [gz_ros2_control] Fixed joint ['world_to_base_joint'] (Entity='52') is skipped.
+[gazebo-1] [INFO] [1793209278.570294783] [gz_ros_control]: Loading controller_manager
+[gazebo-1] [INFO] [1793209278.831745185] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-1] [WARN] [1793209278.831898232] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gazebo-1] [INFO] [1793209278.920651033] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-1] [WARN] [1793209278.920818134] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-1] [INFO] [1793209278.956335615] [controller_manager]: Received robot description from topic.
+[gazebo-1] [INFO] [1793209278.956624939] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-1] [INFO] [1793209278.972155865] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-1] [INFO] [1793209278.972648166] [gz_ros_control]: Loading joint: joint_1
+[gazebo-1] [INFO] [1793209278.972700922] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1793209278.972751303] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.972858741] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1793209278.973055804] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1793209278.973078759] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973158992] [gz_ros_control]: Loading joint: joint_2
+[gazebo-1] [INFO] [1793209278.973176975] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1793209278.973182769] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973188973] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1793209278.973194086] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1793209278.973198356] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973213051] [gz_ros_control]: Loading joint: joint_3
+[gazebo-1] [INFO] [1793209278.973217923] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1793209278.973222704] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973228899] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1793209278.973233099] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1793209278.973237129] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973250651] [gz_ros_control]: Loading joint: joint_4
+[gazebo-1] [INFO] [1793209278.973255152] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1793209278.973259483] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973263803] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1793209278.973268605] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1793209278.973273306] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973288111] [gz_ros_control]: Loading joint: joint_5
+[gazebo-1] [INFO] [1793209278.973292883] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1793209278.973353999] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973366870] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1793209278.973372053] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1793209278.973376293] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973394136] [gz_ros_control]: Loading joint: left_finger_joint
+[gazebo-1] [INFO] [1793209278.973399789] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1793209278.973404471] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973408761] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1793209278.973413552] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1793209278.973417933] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973431185] [gz_ros_control]: Loading joint: right_finger_joint
+[gazebo-1] [INFO] [1793209278.973436086] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1793209278.973440537] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.973445619] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1793209278.973450220] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1793209278.973454471] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1793209278.974602926] [controller_manager]: Initialize hardware 'ManipulatorHardwareInterface' 
+[gazebo-1] [WARN] [1793209278.974752385] [controller_manager.hardware_component.system.ManipulatorHardwareInterface]: Executor is not available during hardware component initialization for 'ManipulatorHardwareInterface'. Skipping node creation!
+[gazebo-1] [INFO] [1793209278.975269536] [controller_manager]: Successful initialization of hardware 'ManipulatorHardwareInterface'
+[gazebo-1] [INFO] [1793209278.976188862] [controller_manager]: Activating component 'ManipulatorHardwareInterface'.
+[gazebo-1] [INFO] [1793209278.976471229] [resource_manager]: 'configure' hardware 'ManipulatorHardwareInterface' 
+[gazebo-1] [INFO] [1793209278.976536145] [gz_ros_control]: System Successfully configured!
+[gazebo-1] [INFO] [1793209278.976560734] [resource_manager]: Successful 'configure' of hardware 'ManipulatorHardwareInterface'
+[gazebo-1] [INFO] [1793209278.976581514] [resource_manager]: 'activate' hardware 'ManipulatorHardwareInterface' 
+[gazebo-1] [INFO] [1793209278.976664082] [resource_manager]: Successful 'activate' of hardware 'ManipulatorHardwareInterface'
+[gazebo-1] [WARN] [1793209278.977057486] [controller_manager]: Component 'ManipulatorHardwareInterface' does not have read or write statistics initialized, skipping registration.
+[gazebo-1] [INFO] [1793209278.977196810] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-1] [INFO] [1793209279.001611843] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-1] [INFO] [1793209279.001884567] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1793209279.044638250] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /home/student/Robotics_Proj/ros2_ws/install/manipulator_control/share/manipulator_control/config/ros2_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-5] [INFO] [1793209279.184813142] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[gazebo-1] [INFO] [1793209279.188820799] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1793209279.189746319] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gazebo-1] [INFO] [1793209279.250625233] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
 WARNING:root:[33;21mCannot infer URDF from `/home/student/Robotics_Proj/ros2_ws/install/manipulator_moveit_config/share/manipulator_moveit_config`. -- using config/manipulator.urdf[0m
 WARNING:root:[33;21mCannot infer SRDF from `/home/student/Robotics_Proj/ros2_ws/install/manipulator_moveit_config/share/manipulator_moveit_config`. -- using config/manipulator.srdf[0m
-[INFO] [move_group-6]: process started with pid [3837]
-[gazebo-1] [WARN] [1793205196.783602030] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
-[gazebo-1] [WARN] [1793205196.788896905] [gz_ros_control]: Waiting RM to load and initialize hardware...
-[move_group-6] [INFO] [1793205197.006678755] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
-[move_group-6] [INFO] [1793205197.007033716] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'manipulator'...
-[move_group-6] [INFO] [1793205197.007064921] [move_group.moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
-[move_group-6] [INFO] [1793205197.059722418] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'arm': 1 1 1 1 1
-[move_group-6] [INFO] [1793205197.191929680] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
-[move_group-6] [INFO] [1793205197.193669073] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
-[move_group-6] [INFO] [1793205197.196651008] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
-[move_group-6] [INFO] [1793205197.199319932] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
-[move_group-6] [INFO] [1793205197.199653262] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
-[move_group-6] [INFO] [1793205197.200715811] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
-[move_group-6] [INFO] [1793205197.203066492] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
-[move_group-6] [INFO] [1793205197.203858572] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
-[move_group-6] [INFO] [1793205197.204702707] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
-[move_group-6] [INFO] [1793205197.204722344] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
-[move_group-6] [INFO] [1793205197.207296190] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
-[move_group-6] [INFO] [1793205197.209488029] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
-[move_group-6] [WARN] [1793205197.209827273] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
-[move_group-6] [ERROR] [1793205197.209848845] [move_group.moveit.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
-[gazebo-1] VMware: No 3D enabled (0, Success).
-[gazebo-1] libEGL warning: egl: failed to create dri2 screen
-[gazebo-1] VMware: No 3D enabled (0, Success).
-[gazebo-1] libEGL warning: egl: failed to create dri2 screen
-[gazebo-1] VMware: No 3D enabled (0, Success).
-[gazebo-1] libEGL warning: egl: failed to create dri2 screen
-[move_group-6] [INFO] [1793205197.341200172] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
-[move_group-6] [INFO] [1793205197.346751642] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
-[move_group-6] [INFO] [1793205197.356396809] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
-[move_group-6] [INFO] [1793205197.367435536] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
-[move_group-6] [INFO] [1793205197.367910927] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
-[move_group-6] [INFO] [1793205197.367921011] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
-[move_group-6] [INFO] [1793205197.367948587] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
-[move_group-6] [INFO] [1793205197.367953900] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
-[move_group-6] [INFO] [1793205197.367966129] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
-[move_group-6] [INFO] [1793205197.370474969] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
-[move_group-6] [INFO] [1793205197.415332561] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
-[move_group-6] [INFO] [1793205197.415901256] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
-[move_group-6] [INFO] [1793205197.450948304] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
-[move_group-6] [INFO] [1793205197.451029208] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
-[move_group-6] [INFO] [1793205197.453460502] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
-[gazebo-1] [INFO] [1793205197.538060322] [controller_manager]: Received robot description from topic.
-[gazebo-1] [INFO] [1793205197.542123912] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
-[gazebo-1] [INFO] [1793205197.561488356] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
-[gazebo-1] [INFO] [1793205197.565534364] [gz_ros_control]: Loading joint: joint_1
-[gazebo-1] [INFO] [1793205197.565568957] [gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1793205197.565579102] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565585096] [gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1793205197.565601225] [gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1793205197.565605635] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565798288] [gz_ros_control]: Loading joint: joint_2
-[gazebo-1] [INFO] [1793205197.565819859] [gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1793205197.565825102] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565831096] [gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1793205197.565835407] [gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1793205197.565839406] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565852007] [gz_ros_control]: Loading joint: joint_3
-[gazebo-1] [INFO] [1793205197.565856708] [gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1793205197.565860778] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565865619] [gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1793205197.565869729] [gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1793205197.565873859] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565883913] [gz_ros_control]: Loading joint: joint_4
-[gazebo-1] [INFO] [1793205197.565888364] [gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1793205197.565892744] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565896654] [gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1793205197.565900824] [gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1793205197.565904954] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565914246] [gz_ros_control]: Loading joint: joint_5
-[gazebo-1] [INFO] [1793205197.565918777] [gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1793205197.565922756] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565928109] [gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1793205197.565932209] [gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1793205197.565936229] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.565998528] [gz_ros_control]: Loading joint: left_finger_joint
-[gazebo-1] [INFO] [1793205197.566009845] [gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1793205197.566014506] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.566019218] [gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1793205197.566023378] [gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1793205197.566027548] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.566039717] [gz_ros_control]: Loading joint: right_finger_joint
-[gazebo-1] [INFO] [1793205197.566044498] [gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1793205197.566048769] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.566053199] [gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1793205197.566057449] [gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1793205197.566061529] [gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1793205197.566284524] [controller_manager]: Initialize hardware 'ManipulatorHardwareInterface' 
-[gazebo-1] [WARN] [1793205197.566318576] [controller_manager.hardware_component.system.ManipulatorHardwareInterface]: Executor is not available during hardware component initialization for 'ManipulatorHardwareInterface'. Skipping node creation!
-[gazebo-1] [INFO] [1793205197.566700011] [controller_manager]: Successful initialization of hardware 'ManipulatorHardwareInterface'
-[gazebo-1] [INFO] [1793205197.566906737] [controller_manager]: Activating component 'ManipulatorHardwareInterface'.
-[gazebo-1] [INFO] [1793205197.566928680] [resource_manager]: 'configure' hardware 'ManipulatorHardwareInterface' 
-[gazebo-1] [INFO] [1793205197.566937601] [gz_ros_control]: System Successfully configured!
-[gazebo-1] [INFO] [1793205197.566944357] [resource_manager]: Successful 'configure' of hardware 'ManipulatorHardwareInterface'
-[gazebo-1] [INFO] [1793205197.566955494] [resource_manager]: 'activate' hardware 'ManipulatorHardwareInterface' 
-[gazebo-1] [INFO] [1793205197.566981316] [resource_manager]: Successful 'activate' of hardware 'ManipulatorHardwareInterface'
-[gazebo-1] [WARN] [1793205197.567119808] [controller_manager]: Component 'ManipulatorHardwareInterface' does not have read or write statistics initialized, skipping registration.
-[gazebo-1] [INFO] [1793205197.567129081] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
-[move_group-6] [INFO] [1793205197.661310355] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
-[move_group-6] [INFO] [1793205197.687979310] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for gripper_controller
-[move_group-6] [INFO] [1793205197.688391950] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
-[move_group-6] [INFO] [1793205197.688444386] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
-[move_group-6] [INFO] [1793205197.689832346] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
-[move_group-6] [INFO] [1793205197.689889433] [move_group]: MoveGroup debug mode is ON
-[gazebo-1] [INFO] [1793205197.698525485] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
-[gazebo-1] [INFO] [1793205197.698802129] [controller_manager]: Loading controller 'joint_state_broadcaster'
-[gazebo-1] [INFO] [1793205197.748965812] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /home/student/Robotics_Proj/ros2_ws/install/manipulator_control/share/manipulator_control/config/ros2_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
-[move_group-6] [INFO] [1793205197.846148074] [move_group.moveit.moveit.ros.move_group.executable]: 
+[INFO] [move_group-6]: process started with pid [16702]
+[move_group-6] [INFO] [1793209280.436872932] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-6] [INFO] [1793209280.437921819] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'manipulator'...
+[move_group-6] [INFO] [1793209280.439621677] [move_group.moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[move_group-6] [INFO] [1793209280.455005681] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'arm': 1 1 1 1 1
+[move_group-6] [INFO] [1793209280.574795173] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-6] [INFO] [1793209280.582681675] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-6] [INFO] [1793209280.591677866] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-6] [INFO] [1793209280.596332564] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-6] [INFO] [1793209280.596690303] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-6] [INFO] [1793209280.598879235] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-6] [INFO] [1793209280.601684145] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-6] [INFO] [1793209280.602137743] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-6] [INFO] [1793209280.603153510] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-6] [INFO] [1793209280.603356608] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-6] [INFO] [1793209280.605448918] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-6] [INFO] [1793209280.608571124] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-6] [WARN] [1793209280.611124466] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-6] [ERROR] [1793209280.611493532] [move_group.moveit.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-6] [INFO] [1793209280.685280800] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[move_group-6] [INFO] [1793209280.693561949] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-6] [INFO] [1793209280.697159050] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-6] [INFO] [1793209280.697682405] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1793209280.698450338] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-6] [INFO] [1793209280.698475909] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-6] [INFO] [1793209280.698620556] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-6] [INFO] [1793209280.698636905] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-6] [INFO] [1793209280.698652322] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-6] [INFO] [1793209280.700555699] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1793209280.713920026] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-6] [INFO] [1793209280.713966617] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-6] [INFO] [1793209280.720406790] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-6] [INFO] [1793209280.721276026] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-6] [INFO] [1793209280.722975203] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-6] [INFO] [1793209280.821913457] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for arm_controller
+[move_group-6] [INFO] [1793209280.831231084] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for gripper_controller
+[move_group-6] [INFO] [1793209280.832173265] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-6] [INFO] [1793209280.832280883] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-6] [INFO] [1793209280.834145588] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-6] [INFO] [1793209280.834325028] [move_group]: MoveGroup debug mode is ON
+[move_group-6] [INFO] [1793209280.938981593] [move_group.moveit.moveit.ros.move_group.executable]: 
 [move_group-6] 
 [move_group-6] ********************************************************
 [move_group-6] * MoveGroup using: 
@@ -153,8 +148,8 @@ WARNING:root:[33;21mCannot infer SRDF from `/home/student/Robotics_Proj/ros2_ws
 [move_group-6] *     - save_geometry_to_file
 [move_group-6] ********************************************************
 [move_group-6] 
-[move_group-6] [INFO] [1793205197.846224938] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
-[move_group-6] [INFO] [1793205197.846236255] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
+[move_group-6] [INFO] [1793209280.939168812] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
+[move_group-6] [INFO] [1793209280.939192198] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
 [move_group-6] [96mLoading 'move_group/ApplyPlanningSceneService'...[0m
 [move_group-6] [96mLoading 'move_group/ClearOctomapService'...[0m
 [move_group-6] [96mLoading 'move_group/GetUrdfService'...[0m
@@ -171,133 +166,174 @@ WARNING:root:[33;21mCannot infer SRDF from `/home/student/Robotics_Proj/ros2_ws
 [move_group-6] 
 [move_group-6] [92mYou can start planning now![0m
 [move_group-6] 
-[spawner-5] [INFO] [1793205197.859933756] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
-[gazebo-1] [INFO] [1793205197.865476450] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
-[gazebo-1] [INFO] [1793205197.865866987] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
-[gazebo-1] [INFO] [1793205198.082808430] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
-[gazebo-1] [WARN] [1793205198.981836332] [gz_ros_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-1] [WARN] [1793209281.072506285] [gz_ros_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
 [gazebo-1] VMware: No 3D enabled (0, Success).
 [gazebo-1] libEGL warning: egl: failed to create dri2 screen
 [gazebo-1] VMware: No 3D enabled (0, Success).
 [gazebo-1] libEGL warning: egl: failed to create dri2 screen
 [gazebo-1] VMware: No 3D enabled (0, Success).
 [gazebo-1] libEGL warning: egl: failed to create dri2 screen
-[INFO] [object_detector-7]: process started with pid [3956]
-[INFO] [pick_and_place_orchestrator.py-8]: process started with pid [3970]
-[spawner-5] [WARN] [1793205207.988277665] [spawner_joint_state_broadcaster]: Failed getting a result from calling /controller_manager/switch_controller in 10.0. (Attempt 1 of 3.)
-[gazebo-1] [INFO] [1793205212.468097805] [controller_manager]: Successfully switched controllers!
-[gazebo-1] [INFO] [1793205212.543430476] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
-[gazebo-1] [WARN] [1793205212.556389931] [controller_manager]: Controller with name 'joint_state_broadcaster' is already active.
-[gazebo-1] [WARN] [1793205212.556416023] [controller_manager]: Controller with name 'joint_state_broadcaster' is already active.
-[gazebo-1] [WARN] [1793205212.556456069] [controller_manager]: Could not activate controller with name 'joint_state_broadcaster'. Check above warnings for more details. Check the state of the controllers and their required interfaces using `ros2 control list_controllers -v` CLI to get more information.
-[gazebo-1] [ERROR] [1793205212.556466995] [controller_manager]: Aborting, no controller is switched! (::STRICT switch)
-[spawner-5] [ERROR] [1793205212.607173642] [spawner_joint_state_broadcaster]: Failed to activate controller : joint_state_broadcaster
-[ERROR] [spawner-5]: process has died [pid 3659, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster --controller-manager /controller_manager --switch-timeout 30.0 --ros-args'].
-[INFO] [spawner-9]: process started with pid [4049]
-[pick_and_place_orchestrator.py-8] [INFO] [1793205214.859806789] [pick_and_place_orchestrator]: Pick and Place Orchestrator initialized. Waiting for controllers...
-[object_detector-7] [INFO] [1793205216.441269367] [object_detector]: Object Detector Node Initialized. Waiting for image stream...
-[gazebo-1] [INFO] [1793205216.478980542] [controller_manager]: Loading controller : 'arm_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
-[gazebo-1] [INFO] [1793205216.479050230] [controller_manager]: Loading controller 'arm_controller'
-[gazebo-1] [INFO] [1793205216.595387001] [controller_manager]: Controller 'arm_controller' node arguments: --ros-args --params-file /home/student/Robotics_Proj/ros2_ws/install/manipulator_control/share/manipulator_control/config/ros2_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
-[spawner-9] [INFO] [1793205216.906823603] [spawner_arm_controller]: Loaded arm_controller
-[gazebo-1] [INFO] [1793205216.915642618] [controller_manager]: Configuring controller: 'arm_controller'
-[gazebo-1] [INFO] [1793205216.916040813] [arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
-[gazebo-1] [INFO] [1793205216.916100075] [arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
-[gazebo-1] [INFO] [1793205216.916153915] [arm_controller]: Using 'splines' interpolation method.
-[gazebo-1] [INFO] [1793205216.959007029] [arm_controller]: Action status changes will be monitored at 20.00 Hz.
-[gazebo-1] [INFO] [1793205217.041915473] [arm_controller]: Setting initial scaling factor to 1.000000
-[gazebo-1] [INFO] [1793205217.043076589] [arm_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
-[gazebo-1] [INFO] [1793205217.136159381] [controller_manager]: Activating controllers: [ arm_controller ]
-[gazebo-1] [INFO] [1793205217.152394847] [controller_manager]: Successfully switched controllers!
-[spawner-9] [INFO] [1793205217.227710882] [spawner_arm_controller]: Configured and activated arm_controller
-[INFO] [spawner-9]: process has finished cleanly [pid 4049]
-[INFO] [spawner-10]: process started with pid [4157]
-[object_detector-7] [INFO] [1793205218.663896800] [object_detector]: Camera intrinsic parameters received.
-[spawner-10] [INFO] [1793205218.751853988] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
-[gazebo-1] [INFO] [1793205219.544260880] [controller_manager]: Loading controller : 'gripper_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
-[gazebo-1] [INFO] [1793205219.544341363] [controller_manager]: Loading controller 'gripper_controller'
-[gazebo-1] [INFO] [1793205219.544702831] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /home/student/Robotics_Proj/ros2_ws/install/manipulator_control/share/manipulator_control/config/ros2_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
-[spawner-10] [INFO] [1793205219.716832989] [spawner_gripper_controller]: Loaded gripper_controller
-[gazebo-1] [INFO] [1793205219.764155564] [controller_manager]: Configuring controller: 'gripper_controller'
-[gazebo-1] [INFO] [1793205219.764334032] [gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
-[gazebo-1] [INFO] [1793205219.764357558] [gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
-[gazebo-1] [INFO] [1793205219.764366690] [gripper_controller]: Using 'splines' interpolation method.
-[gazebo-1] [INFO] [1793205219.797243461] [gripper_controller]: Action status changes will be monitored at 20.00 Hz.
-[gazebo-1] [INFO] [1793205219.850612019] [gripper_controller]: Setting initial scaling factor to 1.000000
-[gazebo-1] [INFO] [1793205219.850735937] [gripper_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
-[gazebo-1] [INFO] [1793205220.075397102] [controller_manager]: Activating controllers: [ gripper_controller ]
-[gazebo-1] [INFO] [1793205220.157076015] [controller_manager]: Successfully switched controllers!
-[spawner-10] [INFO] [1793205220.230572722] [spawner_gripper_controller]: Configured and activated gripper_controller
-[INFO] [spawner-10]: process has finished cleanly [pid 4157]
-[pick_and_place_orchestrator.py-8] [INFO] [1793205225.011709491] [pick_and_place_orchestrator]: Action servers connected! Starting Pick-and-Place sequence...
-[pick_and_place_orchestrator.py-8] [INFO] [1793205225.012266728] [pick_and_place_orchestrator]: [STATE 1/7] Moving arm to ready observation pose & opening gripper...
-[gazebo-1] [INFO] [1793205225.020502549] [arm_controller]: Received new action goal
-[gazebo-1] [INFO] [1793205225.020767515] [arm_controller]: Accepted new action goal
-[gazebo-1] [INFO] [1793205225.021164347] [gripper_controller]: Received new action goal
-[gazebo-1] [INFO] [1793205225.021188235] [gripper_controller]: Accepted new action goal
-[object_detector-7] [INFO] [1793205227.717781500] [object_detector]: Target Detected at base_link: X=0.261, Y=0.001, Z=0.441
-[pick_and_place_orchestrator.py-8] [INFO] [1793205227.717849322] [pick_and_place_orchestrator]: Received target pick pose at X=0.261, Y=0.001, Z=0.441
-[object_detector-7] [INFO] [1793205227.905523381] [object_detector]: Target Detected at base_link: X=0.261, Y=0.001, Z=0.447
-[object_detector-7] [INFO] [1793205227.932518644] [object_detector]: Target Detected at base_link: X=0.265, Y=0.001, Z=0.447
-[object_detector-7] [INFO] [1793205228.164507246] [object_detector]: Target Detected at base_link: X=0.254, Y=0.001, Z=0.448
-[object_detector-7] [INFO] [1793205228.412785282] [object_detector]: Target Detected at base_link: X=0.246, Y=0.001, Z=0.444
-[object_detector-7] [INFO] [1793205228.499554589] [object_detector]: Target Detected at base_link: X=0.248, Y=0.001, Z=0.449
-[object_detector-7] [INFO] [1793205228.687860059] [object_detector]: Target Detected at base_link: X=0.256, Y=0.001, Z=0.449
-[object_detector-7] [INFO] [1793205228.924839487] [object_detector]: Target Detected at base_link: X=0.252, Y=0.001, Z=0.445
-[object_detector-7] [INFO] [1793205229.098338451] [object_detector]: Target Detected at base_link: X=0.260, Y=0.001, Z=0.445
-[object_detector-7] [INFO] [1793205229.407347125] [object_detector]: Target Detected at base_link: X=0.250, Y=0.001, Z=0.451
-[object_detector-7] [INFO] [1793205229.505619171] [object_detector]: Target Detected at base_link: X=0.254, Y=0.001, Z=0.457
-[object_detector-7] [INFO] [1793205229.731674382] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.452
-[object_detector-7] [INFO] [1793205229.909711999] [object_detector]: Target Detected at base_link: X=0.249, Y=0.001, Z=0.449
-[object_detector-7] [INFO] [1793205230.091749904] [object_detector]: Target Detected at base_link: X=0.247, Y=0.001, Z=0.447
-[gazebo-1] [INFO] [1793205230.262717937] [gripper_controller]: Goal reached, success!
-[object_detector-7] [INFO] [1793205230.391466045] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.452
-[object_detector-7] [INFO] [1793205230.520953712] [object_detector]: Target Detected at base_link: X=0.250, Y=0.001, Z=0.442
-[object_detector-7] [INFO] [1793205230.794719682] [object_detector]: Target Detected at base_link: X=0.252, Y=0.001, Z=0.453
-[object_detector-7] [INFO] [1793205230.981008177] [object_detector]: Target Detected at base_link: X=0.250, Y=0.001, Z=0.450
-[object_detector-7] [INFO] [1793205231.273583127] [object_detector]: Target Detected at base_link: X=0.246, Y=0.001, Z=0.446
-[object_detector-7] [INFO] [1793205231.437963326] [object_detector]: Target Detected at base_link: X=0.242, Y=0.000, Z=0.448
-[object_detector-7] [INFO] [1793205231.451531598] [object_detector]: Target Detected at base_link: X=0.248, Y=0.001, Z=0.448
-[object_detector-7] [INFO] [1793205231.656237846] [object_detector]: Target Detected at base_link: X=0.246, Y=0.000, Z=0.446
-[object_detector-7] [INFO] [1793205231.827571445] [object_detector]: Target Detected at base_link: X=0.250, Y=0.000, Z=0.451
-[object_detector-7] [INFO] [1793205231.924227655] [object_detector]: Target Detected at base_link: X=0.246, Y=0.000, Z=0.446
-[object_detector-7] [INFO] [1793205232.050772880] [object_detector]: Target Detected at base_link: X=0.250, Y=0.000, Z=0.450
-[object_detector-7] [INFO] [1793205232.224078904] [object_detector]: Target Detected at base_link: X=0.249, Y=0.000, Z=0.441
-[gazebo-1] 
-[gazebo-1] ODE INTERNAL ERROR 1: assertion "aabbBound >= dMinIntExact && aabbBound < dMaxIntExact" failed in collide() [collision_space.cpp:460]
-[gazebo-1] Stack trace (most recent call last):
-[gazebo-1] #31   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e84d92f, in 
-[gazebo-1] #30   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e78e049, in 
-[gazebo-1] #29   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e6b71d6, in rb_protect
-[gazebo-1] #28   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e85c2d9, in rb_yield
-[gazebo-1] #27   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e857b49, in rb_vm_exec
-[gazebo-1] #26   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e85462b, in 
-[gazebo-1] #25   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e85013e, in 
-[gazebo-1] #24   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e84d92f, in 
-[gazebo-1] #23   Object "/usr/lib/x86_64-linux-gnu/ruby/3.2.0/fiddle.so", at 0x76fb1e427b13, in 
-[gazebo-1] #22   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x76fb1e81637b, in rb_nogvl
-[gazebo-1] #21   Object "/usr/lib/x86_64-linux-gnu/ruby/3.2.0/fiddle.so", at 0x76fb1e42743b, in 
-[gazebo-1] #20   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x76fb1e41b0bd, in ffi_call
-[gazebo-1] #19   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x76fb1e4183ee, in 
-[gazebo-1] #18   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x76fb1e41bb15, in 
-[gazebo-1] #17   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8-gz.so.8.15.0", at 0x76fb194215af, in runServer
-[gazebo-1] #16   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x76fb18159e5c, in 
-[gazebo-1] #15   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x76fb18167c6e, in gz::sim::v8::SimulationRunner::Run(unsigned long)
-[gazebo-1] #14   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x76fb18166d75, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
-[gazebo-1] #13   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x76fb181635ac, in gz::sim::v8::SimulationRunner::UpdateSystems()
-[gazebo-1] #12   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x76fb0cb92d8f, in gz::sim::v8::systems::Physics::Update(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
-[gazebo-1] #11   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x76fb0cb884dd, in gz::sim::v8::systems::PhysicsPrivate::Step(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
-[gazebo-1] #10   Object "/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x76faf6dc75b5, in gz::physics::dartsim::SimulationFeatures::WorldForwardStep(gz::physics::Identity const&, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::CompositeData&, gz::physics::ExpectData<gz::physics::ApplyExternalForceTorques, gz::physics::ApplyGeneralizedForces, gz::physics::VelocityControlCommands, gz::physics::ServoControlCommands, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
-[gazebo-1] #9    Object "/opt/ros/jazzy/opt/gz_dartsim_vendor/lib/libdart.so.6.13", at 0x76faf696d86c, in dart::simulation::World::step(bool)
-[gazebo-1] #8    Object "/opt/ros/jazzy/opt/gz_dartsim_vendor/lib/libdart.so.6.13", at 0x76faf6959b05, in dart::constraint::ConstraintSolver::solve()
-[gazebo-1] #7    Object "/opt/ros/jazzy/opt/gz_dartsim_vendor/lib/libdart.so.6.13", at 0x76faf69578a0, in dart::constraint::ConstraintSolver::updateConstraints()
-[gazebo-1] #6    Object "/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x76faf6da6fdb, in dart::collision::GzOdeCollisionDetector::collide(dart::collision::CollisionGroup*, dart::collision::CollisionOption const&, dart::collision::CollisionResult*)
-[gazebo-1] #5    Object "/opt/ros/jazzy/opt/gz_dartsim_vendor/lib/libdart-collision-ode.so.6.13", at 0x76fafd97a48c, in dart::collision::OdeCollisionDetector::collide(dart::collision::CollisionGroup*, dart::collision::CollisionOption const&, dart::collision::CollisionResult*)
-[gazebo-1] #4    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x76fafc1f3259, in dxHashSpace::collide(void*, void (*)(void*, dxGeom*, dxGeom*))
-[gazebo-1] #3    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x76fafc1f2037, in dDebug
-[gazebo-1] #2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76fb1e2288fe, in abort
-[gazebo-1] #1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76fb1e24527d, in gsignal
-[gazebo-1] #0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76fb1e29ec0c, in pthread_kill
-[gazebo-1] Aborted (Signal sent by tkill() 3717 1000)
-[object_detector-7] [INFO] [1793205232.314317871] [object_detector]: Target Detected at base_link: X=0.253, Y=0.000, Z=0.446
-[INFO] [gazebo-1]: process has finished cleanly [pid 3654]
+[gazebo-1] VMware: No 3D enabled (0, Success).
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] VMware: No 3D enabled (0, Success).
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] VMware: No 3D enabled (0, Success).
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[INFO] [object_detector-7]: process started with pid [16810]
+[INFO] [pick_and_place_orchestrator.py-8]: process started with pid [16866]
+[pick_and_place_orchestrator.py-8] [INFO] [1793209293.486051837] [pick_and_place_orchestrator]: Pick and Place Orchestrator initialized. Waiting for controllers...
+[object_detector-7] [INFO] [1793209299.895559161] [object_detector]: Object Detector Node Initialized. Waiting for image stream...
+[gazebo-1] [INFO] [1793209301.159322832] [controller_manager]: Successfully switched controllers!
+[spawner-5] [INFO] [1793209301.185914873] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-5]: process has finished cleanly [pid 16524]
+[INFO] [spawner-9]: process started with pid [17011]
+[object_detector-7] [INFO] [1793209303.645302913] [object_detector]: Camera intrinsic parameters received.
+[spawner-9] [INFO] [1793209307.315510256] [spawner_arm_controller]: waiting for service /controller_manager/list_controllers to become available...
+[gazebo-1] [INFO] [1793209308.384540826] [controller_manager]: Loading controller : 'arm_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[gazebo-1] [INFO] [1793209308.384589483] [controller_manager]: Loading controller 'arm_controller'
+[gazebo-1] [INFO] [1793209308.417172062] [controller_manager]: Controller 'arm_controller' node arguments: --ros-args --params-file /home/student/Robotics_Proj/ros2_ws/install/manipulator_control/share/manipulator_control/config/ros2_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-9] [INFO] [1793209308.724799578] [spawner_arm_controller]: Loaded arm_controller
+[gazebo-1] [INFO] [1793209308.755171157] [controller_manager]: Configuring controller: 'arm_controller'
+[gazebo-1] [INFO] [1793209308.755716686] [arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-1] [INFO] [1793209308.755818831] [arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-1] [INFO] [1793209308.755877743] [arm_controller]: Using 'splines' interpolation method.
+[gazebo-1] [INFO] [1793209308.778842690] [arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[gazebo-1] [INFO] [1793209308.904558886] [arm_controller]: Setting initial scaling factor to 1.000000
+[gazebo-1] [INFO] [1793209308.904604886] [arm_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[gazebo-1] [INFO] [1793209308.971037286] [controller_manager]: Activating controllers: [ arm_controller ]
+[gazebo-1] [INFO] [1793209309.086554158] [controller_manager]: Successfully switched controllers!
+[spawner-9] [INFO] [1793209309.164432020] [spawner_arm_controller]: Configured and activated arm_controller
+[INFO] [spawner-9]: process has finished cleanly [pid 17011]
+[INFO] [spawner-10]: process started with pid [17123]
+[spawner-10] [INFO] [1793209310.956085135] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[gazebo-1] [INFO] [1793209312.629635373] [controller_manager]: Loading controller : 'gripper_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[gazebo-1] [INFO] [1793209312.629734861] [controller_manager]: Loading controller 'gripper_controller'
+[gazebo-1] [INFO] [1793209312.630088751] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /home/student/Robotics_Proj/ros2_ws/install/manipulator_control/share/manipulator_control/config/ros2_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-10] [INFO] [1793209312.768818813] [spawner_gripper_controller]: Loaded gripper_controller
+[gazebo-1] [INFO] [1793209312.799711438] [controller_manager]: Configuring controller: 'gripper_controller'
+[gazebo-1] [INFO] [1793209312.799967582] [gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-1] [INFO] [1793209312.800008119] [gripper_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-1] [INFO] [1793209312.800025140] [gripper_controller]: Using 'splines' interpolation method.
+[gazebo-1] [INFO] [1793209312.816370585] [gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[gazebo-1] [INFO] [1793209312.844434190] [gripper_controller]: Setting initial scaling factor to 1.000000
+[gazebo-1] [INFO] [1793209312.844524657] [gripper_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[gazebo-1] [INFO] [1793209312.942911241] [controller_manager]: Activating controllers: [ gripper_controller ]
+[gazebo-1] [INFO] [1793209312.988883600] [controller_manager]: Successfully switched controllers!
+[spawner-10] [INFO] [1793209313.368376903] [spawner_gripper_controller]: Configured and activated gripper_controller
+[INFO] [spawner-10]: process has finished cleanly [pid 17123]
+[pick_and_place_orchestrator.py-8] [INFO] [1793209314.552079604] [pick_and_place_orchestrator]: Action servers connected! Starting Pick-and-Place sequence...
+[pick_and_place_orchestrator.py-8] [INFO] [1793209314.552890861] [pick_and_place_orchestrator]: [STATE 1/7] Moving arm to ready observation pose & opening gripper...
+[gazebo-1] [INFO] [1793209314.567294276] [gripper_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209314.567416570] [gripper_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1793209314.570905732] [arm_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209314.570963601] [arm_controller]: Accepted new action goal
+[object_detector-7] [INFO] [1793209317.117794612] [object_detector]: Target Detected at base_link: X=0.302, Y=0.001, Z=0.389
+[pick_and_place_orchestrator.py-8] [INFO] [1793209317.117997298] [pick_and_place_orchestrator]: Received target pick pose at X=0.302, Y=0.001, Z=0.389
+[object_detector-7] [INFO] [1793209317.258806268] [object_detector]: Target Detected at base_link: X=0.303, Y=0.001, Z=0.396
+[object_detector-7] [INFO] [1793209317.582125471] [object_detector]: Target Detected at base_link: X=0.250, Y=0.001, Z=0.441
+[object_detector-7] [INFO] [1793209317.652921154] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.447
+[object_detector-7] [INFO] [1793209317.921932105] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.452
+[object_detector-7] [INFO] [1793209318.050517064] [object_detector]: Target Detected at base_link: X=0.247, Y=0.001, Z=0.448
+[object_detector-7] [INFO] [1793209318.429662723] [object_detector]: Target Detected at base_link: X=0.244, Y=0.001, Z=0.445
+[object_detector-7] [INFO] [1793209318.560426901] [object_detector]: Target Detected at base_link: X=0.249, Y=0.001, Z=0.450
+[object_detector-7] [INFO] [1793209318.768990632] [object_detector]: Target Detected at base_link: X=0.247, Y=0.001, Z=0.448
+[object_detector-7] [INFO] [1793209319.056019553] [object_detector]: Target Detected at base_link: X=0.252, Y=0.001, Z=0.453
+[object_detector-7] [INFO] [1793209319.332229789] [object_detector]: Target Detected at base_link: X=0.248, Y=0.001, Z=0.449
+[object_detector-7] [INFO] [1793209319.544724653] [object_detector]: Target Detected at base_link: X=0.244, Y=0.001, Z=0.445
+[object_detector-7] [INFO] [1793209319.768797864] [object_detector]: Target Detected at base_link: X=0.241, Y=0.001, Z=0.442
+[object_detector-7] [INFO] [1793209319.826727221] [object_detector]: Target Detected at base_link: X=0.246, Y=0.001, Z=0.447
+[gazebo-1] [INFO] [1793209319.992999880] [gripper_controller]: Goal reached, success!
+[object_detector-7] [INFO] [1793209320.089711585] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.452
+[object_detector-7] [INFO] [1793209320.386451441] [object_detector]: Target Detected at base_link: X=0.246, Y=0.001, Z=0.446
+[object_detector-7] [INFO] [1793209320.589494698] [object_detector]: Target Detected at base_link: X=0.250, Y=0.001, Z=0.451
+[object_detector-7] [INFO] [1793209320.790317274] [object_detector]: Target Detected at base_link: X=0.246, Y=0.001, Z=0.447
+[object_detector-7] [INFO] [1793209320.918854806] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.452
+[object_detector-7] [INFO] [1793209321.148551251] [object_detector]: Target Detected at base_link: X=0.248, Y=0.001, Z=0.448
+[object_detector-7] [INFO] [1793209321.288561016] [object_detector]: Target Detected at base_link: X=0.253, Y=0.001, Z=0.453
+[object_detector-7] [INFO] [1793209321.511844903] [object_detector]: Target Detected at base_link: X=0.249, Y=0.001, Z=0.449
+[object_detector-7] [INFO] [1793209321.695843799] [object_detector]: Target Detected at base_link: X=0.246, Y=0.001, Z=0.446
+[object_detector-7] [INFO] [1793209321.888976032] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.451
+[object_detector-7] [INFO] [1793209321.997350580] [object_detector]: Target Detected at base_link: X=0.246, Y=0.001, Z=0.446
+[object_detector-7] [INFO] [1793209322.285000720] [object_detector]: Target Detected at base_link: X=0.242, Y=0.001, Z=0.442
+[object_detector-7] [INFO] [1793209322.391066518] [object_detector]: Target Detected at base_link: X=0.247, Y=0.001, Z=0.447
+[object_detector-7] [INFO] [1793209322.629196360] [object_detector]: Target Detected at base_link: X=0.251, Y=0.001, Z=0.452
+[object_detector-7] [INFO] [1793209322.763034145] [object_detector]: Target Detected at base_link: X=0.248, Y=0.000, Z=0.447
+[object_detector-7] [INFO] [1793209322.968915871] [object_detector]: Target Detected at base_link: X=0.248, Y=0.001, Z=0.439
+[object_detector-7] [INFO] [1793209323.086709809] [object_detector]: Target Detected at base_link: X=0.249, Y=0.000, Z=0.450
+[object_detector-7] [INFO] [1793209323.338579508] [object_detector]: Target Detected at base_link: X=0.247, Y=0.000, Z=0.447
+[object_detector-7] [INFO] [1793209323.487895079] [object_detector]: Target Detected at base_link: X=0.252, Y=0.000, Z=0.452
+[object_detector-7] [INFO] [1793209323.685337416] [object_detector]: Target Detected at base_link: X=0.248, Y=0.000, Z=0.448
+[object_detector-7] [INFO] [1793209323.913604749] [object_detector]: Target Detected at base_link: X=0.246, Y=0.000, Z=0.446
+[object_detector-7] [INFO] [1793209324.048723175] [object_detector]: Target Detected at base_link: X=0.251, Y=0.000, Z=0.451
+[object_detector-7] [INFO] [1793209324.277701906] [object_detector]: Target Detected at base_link: X=0.243, Y=0.000, Z=0.447
+[object_detector-7] [INFO] [1793209324.450862084] [object_detector]: Target Detected at base_link: X=0.244, Y=0.000, Z=0.452
+[object_detector-7] [INFO] [1793209324.601007102] [object_detector]: Target Detected at base_link: X=0.235, Y=0.000, Z=0.446
+[object_detector-7] [INFO] [1793209324.810527978] [object_detector]: Target Detected at base_link: X=0.236, Y=0.000, Z=0.451
+[object_detector-7] [INFO] [1793209324.963902983] [object_detector]: Target Detected at base_link: X=0.229, Y=0.000, Z=0.447
+[gazebo-1] [INFO] [1793209330.261273318] [arm_controller]: Goal reached, success!
+[pick_and_place_orchestrator.py-8] [INFO] [1793209332.629134128] [pick_and_place_orchestrator]: [STATE 2/7] Waiting for perception node to publish target pose...
+[pick_and_place_orchestrator.py-8] [INFO] [1793209335.035192555] [pick_and_place_orchestrator]: [STATE 3/7] Moving arm to pre-grasp approach pose above object...
+[gazebo-1] [INFO] [1793209335.056528654] [arm_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209335.056772308] [arm_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1793209348.711335999] [arm_controller]: Goal reached, success!
+[pick_and_place_orchestrator.py-8] [INFO] [1793209351.034574381] [pick_and_place_orchestrator]: [STATE 4/7] Descending to grasp height and closing gripper...
+[gazebo-1] [INFO] [1793209351.054870520] [arm_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209351.054952025] [arm_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1793209353.254439354] [gripper_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209353.254524428] [gripper_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1793209357.633994760] [gripper_controller]: Goal reached, success!
+[gazebo-1] [INFO] [1793209359.992332239] [arm_controller]: Goal reached, success!
+[pick_and_place_orchestrator.py-8] [INFO] [1793209360.000642759] [pick_and_place_orchestrator]: [STATE 5/7] Lifting object vertically...
+[gazebo-1] [INFO] [1793209360.005333373] [arm_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209360.005450735] [arm_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1793209370.667777556] [arm_controller]: Goal reached, success!
+[pick_and_place_orchestrator.py-8] [INFO] [1793209373.010608041] [pick_and_place_orchestrator]: [STATE 6/7] Transporting object above target placement bin...
+[gazebo-1] [INFO] [1793209373.029901936] [arm_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209373.029971463] [arm_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1793209386.714991029] [arm_controller]: Goal reached, success!
+[pick_and_place_orchestrator.py-8] [INFO] [1793209388.939255309] [pick_and_place_orchestrator]: [STATE 7/7] Releasing object into bin and returning to Home pose...
+[gazebo-1] [INFO] [1793209388.940431100] [gripper_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209388.940477873] [gripper_controller]: Accepted new action goal
+[pick_and_place_orchestrator.py-8] [INFO] [1793209390.442785167] [pick_and_place_orchestrator]: 🎉 Pick-and-Place Cycle successfully completed!
+[gazebo-1] [INFO] [1793209390.449164719] [arm_controller]: Received new action goal
+[gazebo-1] [INFO] [1793209390.449218207] [arm_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1793209393.909455911] [gripper_controller]: Goal reached, success!
+[object_detector-7] [INFO] [1793209397.577666212] [object_detector]: Target Detected at base_link: X=0.226, Y=0.174, Z=0.459
+[object_detector-7] [INFO] [1793209397.833349809] [object_detector]: Target Detected at base_link: X=0.231, Y=0.174, Z=0.467
+[object_detector-7] [INFO] [1793209397.996031214] [object_detector]: Target Detected at base_link: X=0.218, Y=0.177, Z=0.488
+[object_detector-7] [INFO] [1793209398.244793611] [object_detector]: Target Detected at base_link: X=0.224, Y=0.178, Z=0.493
+[object_detector-7] [INFO] [1793209398.399151361] [object_detector]: Target Detected at base_link: X=0.230, Y=0.179, Z=0.497
+[object_detector-7] [INFO] [1793209398.625379825] [object_detector]: Target Detected at base_link: X=0.229, Y=0.182, Z=0.492
+[object_detector-7] [INFO] [1793209398.784027293] [object_detector]: Target Detected at base_link: X=0.233, Y=0.183, Z=0.495
+[object_detector-7] [INFO] [1793209398.835461340] [object_detector]: Target Detected at base_link: X=0.232, Y=0.186, Z=0.490
+[object_detector-7] [INFO] [1793209399.084654461] [object_detector]: Target Detected at base_link: X=0.237, Y=0.187, Z=0.494
+[object_detector-7] [INFO] [1793209399.300827523] [object_detector]: Target Detected at base_link: X=0.232, Y=0.188, Z=0.489
+[object_detector-7] [INFO] [1793209399.428959393] [object_detector]: Target Detected at base_link: X=0.236, Y=0.187, Z=0.493
+[object_detector-7] [INFO] [1793209399.687546278] [object_detector]: Target Detected at base_link: X=0.238, Y=0.187, Z=0.496
+[object_detector-7] [INFO] [1793209399.846896151] [object_detector]: Target Detected at base_link: X=0.234, Y=0.188, Z=0.491
+[object_detector-7] [INFO] [1793209400.090367217] [object_detector]: Target Detected at base_link: X=0.237, Y=0.187, Z=0.495
+[object_detector-7] [INFO] [1793209400.301906822] [object_detector]: Target Detected at base_link: X=0.240, Y=0.186, Z=0.499
+[object_detector-7] [INFO] [1793209400.467362290] [object_detector]: Target Detected at base_link: X=0.236, Y=0.187, Z=0.494
+[object_detector-7] [INFO] [1793209400.656360373] [object_detector]: Target Detected at base_link: X=0.238, Y=0.186, Z=0.497
+[object_detector-7] [INFO] [1793209400.846518071] [object_detector]: Target Detected at base_link: X=0.234, Y=0.187, Z=0.491
+[object_detector-7] [INFO] [1793209400.970117005] [object_detector]: Target Detected at base_link: X=0.236, Y=0.186, Z=0.494
+[object_detector-7] [INFO] [1793209401.176230578] [object_detector]: Target Detected at base_link: X=0.240, Y=0.185, Z=0.499
+[object_detector-7] [INFO] [1793209401.357153543] [object_detector]: Target Detected at base_link: X=0.236, Y=0.186, Z=0.493
+[object_detector-7] [INFO] [1793209401.607157065] [object_detector]: Target Detected at base_link: X=0.232, Y=0.187, Z=0.488
+[object_detector-7] [INFO] [1793209401.759463702] [object_detector]: Target Detected at base_link: X=0.237, Y=0.185, Z=0.494
+[object_detector-7] [INFO] [1793209401.927556511] [object_detector]: Target Detected at base_link: X=0.233, Y=0.186, Z=0.488
+[object_detector-7] [INFO] [1793209402.155347536] [object_detector]: Target Detected at base_link: X=0.232, Y=0.181, Z=0.497
+[object_detector-7] [INFO] [1793209402.433104134] [object_detector]: Target Detected at base_link: X=0.238, Y=0.183, Z=0.496
+[object_detector-7] [INFO] [1793209402.514862075] [object_detector]: Target Detected at base_link: X=0.232, Y=0.180, Z=0.496
+[object_detector-7] [INFO] [1793209402.648859257] [object_detector]: Target Detected at base_link: X=0.236, Y=0.183, Z=0.493
+[object_detector-7] [INFO] [1793209402.877161583] [object_detector]: Target Detected at base_link: X=0.232, Y=0.184, Z=0.487
+[object_detector-7] [INFO] [1793209403.049238916] [object_detector]: Target Detected at base_link: X=0.236, Y=0.182, Z=0.492
+[object_detector-7] [INFO] [1793209403.313012204] [object_detector]: Target Detected at base_link: X=0.231, Y=0.182, Z=0.487
+[object_detector-7] [INFO] [1793209403.476129161] [object_detector]: Target Detected at base_link: X=0.235, Y=0.179, Z=0.493
+[object_detector-7] [INFO] [1793209403.704367962] [object_detector]: Target Detected at base_link: X=0.237, Y=0.177, Z=0.496
+[object_detector-7] [INFO] [1793209403.863922474] [object_detector]: Target Detected at base_link: X=0.239, Y=0.176, Z=0.497
+[object_detector-7] [INFO] [1793209404.021891443] [object_detector]: Target Detected at base_link: X=0.236, Y=0.179, Z=0.487
+[object_detector-7] [INFO] [1793209404.114485999] [object_detector]: Target Detected at base_link: X=0.226, Y=0.172, Z=0.493
+[object_detector-7] [INFO] [1793209404.387071721] [object_detector]: Target Detected at base_link: X=0.241, Y=0.184, Z=0.478
+[object_detector-7] [INFO] [1793209404.543616437] [object_detector]: Target Detected at base_link: X=0.255, Y=0.191, Z=0.474
+[gazebo-1] [INFO] [1793209405.646796301] [arm_controller]: Goal reached, success!
